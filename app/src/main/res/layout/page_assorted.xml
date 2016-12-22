@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#d0d0ff"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:text="- Misc View Objs -" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/p0TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TextView"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/p0Button1"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stateListAnimator="@anim/press"
+                android:text="Button Full" />
+
+            <Button
+                android:id="@+id/p0Button2"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:stateListAnimator="@anim/press"
+                android:text="Button Wrap" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:background="#e0e0ff">
+
+                <RadioButton
+                    android:id="@+id/p0RadioButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stateListAnimator="@anim/press"
+                    android:text="RadioBtn Full" />
+
+                <RadioButton
+                    android:id="@+id/p0RadioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:stateListAnimator="@anim/press"
+                    android:text="RadioBtn Wrap" />
+            </RadioGroup>
+
+            <GridLayout
+                android:id="@+id/p0GridLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffe0e0"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/p0CheckBox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:stateListAnimator="@anim/press"
+                    android:text="CheckBox Full" />
+
+                <CheckBox
+                    android:id="@+id/p0CheckBox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:stateListAnimator="@anim/press"
+                    android:text="CheckBox wrap" />
+
+            </GridLayout>
+
+            <LinearLayout
+                android:id="@+id/p0GridLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#e0ffe0"
+                android:orientation="vertical">
+
+                <CheckedTextView
+                    android:id="@+id/p0CheckedTextView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checkMark="@drawable/checkline"
+                    android:checked="true"
+                    android:clickable="true"
+                    android:text="CheckTextBox Full"
+                    tools:checked="true" />
+
+                <CheckedTextView
+                    android:id="@+id/p0CheckedTextView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkMark="@drawable/checkline"
+                    android:checked="true"
+                    android:clickable="true"
+                    android:text="CheckTextBox wrap"
+                    tools:checked="true" />
+            </LinearLayout>
+
+            <ToggleButton
+                android:id="@+id/o0ToggleButton1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:stateListAnimator="@anim/press"
+                android:text="New ToggleButton" />
+
+            <ToggleButton
+                android:id="@+id/p0ToggleButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:stateListAnimator="@anim/press"
+                android:text="New ToggleButton" />
+
+            <ImageButton
+                android:id="@+id/p0ImageButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image100"
+                android:stateListAnimator="@anim/press" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

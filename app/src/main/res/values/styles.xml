@@ -1,0 +1,118 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/highlight</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Full" >
+        <!-- Min API 19 -->
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ScrollTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">@color/lighten</item>
+    </style>
+
+    <style name="ScrollTabStyle" parent="Widget.Design.TabLayout">
+        <item name="android:textSize">14dp</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>
+        <item name="tabTextAppearance">@style/ScrollTabTextAppearance</item>
+    </style>
+
+    <style name="SwitchBlueTheme">
+        <item name="colorControlActivated">#2096F0</item>
+    </style>
+
+    <style name="SwitchBlueStyle">
+        <item name="android:textColor">#ff00ff</item>
+        <item name="android:textSize">@dimen/buttonTextSize</item>
+        <item name="android:background">@drawable/transparent_ripple</item>
+        <!-- min API 15
+        <item name="android:thumbTint">#2096F0</item>
+        <item name="android:trackTint">#165B90</item>
+        -->
+    </style>
+    <style name="TextAppearanceBlack" parent="@android:style/TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+
+    <style name="TextAppearanceBlack12" parent="@style/TextAppearanceBlack">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextAppearanceBlack16" parent="@style/TextAppearanceBlack">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearanceBlack20" parent="@style/TextAppearanceBlack">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextAppearanceBlack32" parent="@style/TextAppearanceBlack">
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="TextAppearanceWhite" parent="@android:style/TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="TextAppearanceWhite20" parent="@style/TextAppearanceWhite">
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="TextAppearanceWhite32" parent="@style/TextAppearanceWhite">
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="TextLongA" parent="@style/TextAppearanceWhite">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+
+    <!--
+    parent="@android:style/Widget.Material.Light.CompoundButton.RadioButton"
+ <item name="android:background">#666</item>
+ <item name="android:background">@drawable/ripple_boarderless</item>
+    -->
+    <style name="RadioTab" parent="@android:style/Widget.Holo.Light.CompoundButton.RadioButton">
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/ripple_boarderless</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/tab_colors</item>
+    </style>
+
+
+    <style name="FullDrawerStyle" parent="Theme.AppCompat.Light.NoActionBar" >
+        <!-- Min API 19 -->
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+
+    <style name="SeekBarStyle" parent="Widget.AppCompat.SeekBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@android:drawable/progress_horizontal</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_horizontal</item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+        <!-- item name="android:thumb">@android:drawable/ic_menu_compass</item -->
+        <item name="android:thumbOffset">8px</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+</resources>

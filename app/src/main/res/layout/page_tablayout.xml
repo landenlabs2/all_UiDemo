@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#444"
+        style="@style/ScrollTabStyle"
+        app:tabIndicatorHeight="3dp"
+        app:tabGravity="fill" >
+
+        <android.support.design.widget.TabItem
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:icon="@drawable/scr_home"
+            android:text="Home" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/scr_hourly"
+            android:text="Hourly" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/scr_daily"
+            android:text="Daily" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/scr_map"
+            android:text="Map" />
+
+    </android.support.design.widget.TabLayout>
+
+    <!-- TODO fill with items
+    <TabWidget
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </TabWidget>
+    -->
+
+</LinearLayout>

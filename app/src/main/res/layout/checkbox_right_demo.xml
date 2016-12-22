@@ -1,0 +1,338 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#303030"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <!--    android:background="@drawable/paper_black" -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--
+               android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+               android:drawableRight="@drawable/btn_check_material_anim"
+
+               android:drawableRight="@drawable/state_test"
+               android:drawableTop="@drawable/state_test"
+               android:drawableLeft="@drawable/state_test"
+               android:drawableBottom="@drawable/state_test"
+            -->
+
+            <Button
+                android:id="@+id/p2Button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/transparent_ripple"
+                android:drawableRight="@drawable/checkline"
+                android:gravity="left|center_vertical"
+                android:text="Button"
+                android:textAllCaps="false"
+
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/buttonTextSize" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/p2Button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/transparent_ripple"
+                android:drawableRight="@drawable/checkline"
+                android:gravity="left|center_vertical"
+                android:text="AppCompatButton"
+                android:textAllCaps="false"
+
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/buttonTextSize" />
+
+            <TextView
+                android:id="@+id/p2TextView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/transparent_ripple"
+                android:drawableRight="@drawable/checkline"
+                android:gravity="left|center_vertical"
+                android:hapticFeedbackEnabled="true"
+
+                android:text="TextView"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/buttonTextSize" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/p2TextView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/transparent_ripple"
+                android:drawableRight="@drawable/checkline"
+                android:gravity="left|center_vertical"
+                android:hapticFeedbackEnabled="true"
+
+                android:text="AppCompatTextView"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/buttonTextSize" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/white" />
+
+            <CheckBox
+                android:id="@+id/p2Checkbox1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttonHeight"
+                android:background="@drawable/transparent_ripple"
+                android:button="@null"
+                android:checked="true"
+                android:drawableRight="@drawable/checkline"
+                android:gravity="left|center_vertical"
+                android:text="CheckBox"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/buttonTextSize" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/p2Checkbox2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttonHeight"
+                android:background="@drawable/transparent_ripple"
+                android:button="@null"
+                android:checked="true"
+                android:drawableRight="@drawable/checkline"
+                android:gravity="left|center_vertical"
+                android:text="AppCompatCheckBox"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/buttonTextSize" />
+
+            <android.support.v7.widget.AppCompatCheckedTextView
+                android:id="@+id/p2Checkbox3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttonHeight"
+                android:checkMark="@drawable/checkline"
+                android:checked="true"
+                android:gravity="left|center_vertical"
+                android:text="AppCompatCheckedTextView"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/buttonTextSize" />
+
+            <!--  android:checkMark="?android:attr/listChoiceIndicatorMultiple" -->
+            <CheckedTextView
+                android:id="@+id/p2Checkbox4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttonHeight"
+                android:checkMark="@drawable/checkline"
+                android:checked="true"
+                android:gravity="left|center_vertical"
+                android:text="CheckedTextView"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/buttonTextSize" />
+
+            <CheckBox
+                android:id="@+id/p2Checkbox5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttonHeight"
+                android:background="@drawable/transparent_ripple"
+                android:checked="true"
+                android:gravity="center_vertical|end"
+                android:text="CheckBox"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/buttonTextSize" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/white" />
+
+            <ToggleButton
+                android:id="@+id/p2ToggleButton1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttonHeight"
+                android:background="@drawable/transparent_ripple"
+                android:checked="true"
+                android:drawableRight="@drawable/checkline"
+                android:gravity="center_vertical|left"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+
+                android:textOff="ToggleButtonOff"
+
+                android:textOn="ToggleButtonOn"
+                android:textSize="@dimen/buttonTextSize" />
+
+            <!--
+            <ToggleButton
+                android:id="@+id/p2ToggleButton2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttonHeight"
+                android:background="@drawable/transparent_ripple"
+                android:checked="true"
+                android:drawableRight="@drawable/btn_check_material_anim"
+                android:gravity="center_vertical|left"
+                android:textAllCaps="false"
+
+                android:textColor="@android:color/white"
+                android:textOff="ToggleBtnnAnimOff"
+                android:textOn="ToggleBtnnAnimOn"
+                android:textSize="@dimen/buttonTextSize" />
+            -->
+
+            <RelativeLayout
+                android:id="@+id/p2ImageButton1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttonHeight"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="ImageButton"
+                    android:textColor="@android:color/white"
+
+                    android:textSize="@dimen/buttonTextSize" />
+
+                <ImageButton
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/buttonHeight"
+                    android:layout_alignParentRight="true"
+
+                    android:background="@drawable/transparent_ripple"
+
+                    android:clickable="false"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/checkline" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/white" />
+
+            <RadioButton
+                android:id="@+id/p2RadioButton1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttonHeight"
+                android:background="@drawable/transparent_ripple"
+                android:button="@null"
+                android:checked="true"
+
+                android:drawableRight="@drawable/checkline"
+
+                android:text="RadioButton"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/buttonTextSize" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/p2RadioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttonHeight"
+                android:background="@drawable/transparent_ripple"
+                android:button="@null"
+                android:checked="true"
+
+                android:drawableRight="@drawable/checkline"
+
+                android:text="AppCompatRadioButton"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/buttonTextSize" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/white" />
+
+            <Switch
+                android:id="@+id/p2Switch1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttonHeight"
+                android:background="@drawable/transparent_ripple"
+                android:checked="true"
+                android:gravity="center_vertical|left"
+                android:text="Switch"
+                android:textColor="@android:color/white"
+                android:textOff=""
+
+                android:textOn=""
+
+                android:textSize="@dimen/buttonTextSize"
+                android:thumb="@drawable/checkline"
+                android:track="@drawable/image_off" />
+
+            <!-- android:background="@android:drawable/checkbox_on_background" -->
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/p2Switch2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttonHeight"
+                android:background="@drawable/transparent_ripple"
+                android:checked="true"
+                android:gravity="center_vertical|left"
+                android:text="SwitchCompat"
+
+                android:textColor="@android:color/white"
+
+                android:textSize="@dimen/buttonTextSize"
+                android:thumb="@drawable/checkline"
+                android:track="@null" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ToggleButton
+            android:id="@+id/p2Enable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/transparent_ripple"
+            android:checked="true"
+            android:textColor="@android:color/white"
+            android:textOff="Disabled"
+            android:textOn="Enabled"
+            android:textSize="20sp" />
+
+        <ToggleButton
+            android:id="@+id/p2Checked"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/transparent_ripple"
+            android:checked="true"
+            android:textColor="@android:color/white"
+            android:textOff="unChecked"
+            android:textOn="Checked"
+            android:textSize="20sp" />
+
+        <ToggleButton
+            android:id="@+id/p2Background"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/transparent_ripple"
+            android:checked="false"
+            android:textColor="@android:color/white"
+            android:textOff="DarkBg"
+            android:textOn="LightBg"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

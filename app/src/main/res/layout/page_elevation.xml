@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Press squares shadow changes\nElevation requires api 21"
+        android:textColor="@android:color/black"
+        android:textSize="16dp" />
+
+    <ScrollView
+        android:background="@drawable/paper_lite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Fake gradient shadow on top -->
+            <View
+                android:id="@+id/textBarTopShadow"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/shadow1"
+                android:layout_marginLeft="60dp"
+                android:layout_width="200dp"
+                android:layout_height="10dp"
+                />
+
+            <TextView
+                android:id="@+id/textBar"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="60dp"
+                android:layout_below="@+id/textBarTopShadow"
+                android:gravity="center"
+
+                android:background="@android:color/holo_green_dark"
+                android:clickable="true"
+                android:elevation="0dp"
+                android:stateListAnimator="@anim/press"
+                android:text="200x50 elv=0 \n[ TextView ]"
+                android:translationZ="0dp" />
+
+
+            <TextView
+                android:layout_below="@+id/textBar"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="60dp"
+
+                android:background="@android:color/darker_gray"
+                android:clickable="true"
+                android:elevation="30dp"
+                android:stateListAnimator="@anim/press"
+                android:text="200x200 elv=30 z=5\n[ TextView ]"
+                android:translationZ="5dp" />
+
+            <TextView
+                android:layout_below="@+id/textBar"
+                android:layout_width="260dp"
+                android:layout_height="260dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+
+                android:background="@android:color/holo_blue_dark"
+                android:clickable="true"
+                android:elevation="20dp"
+                android:stateListAnimator="@anim/press"
+                android:text="260x260 elv=20 z=5"
+                android:translationZ="5dp" />
+
+            <TextView
+                android:layout_below="@+id/textBar"
+                android:layout_width="320dp"
+                android:layout_height="320dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+
+                android:background="@android:color/holo_green_dark"
+                android:clickable="true"
+                android:elevation="10dp"
+                android:stateListAnimator="@anim/press"
+                android:text="320x320 elv=10 z=5"
+                android:translationZ="5dp" />
+
+
+            <Button
+                android:layout_below="@+id/textBar"
+                android:layout_width="200dp"
+
+                android:layout_height="200dp"
+                android:layout_marginLeft="60dp"
+
+                android:layout_marginTop="460dp"
+                android:background="@android:color/darker_gray"
+                android:clickable="true"
+
+                android:elevation="5dp"
+                android:gravity="top"
+                android:stateListAnimator="@anim/press"
+                android:text="200x200 elv=5 z=5\n[ Button ]"
+                android:translationZ="5dp" />
+
+            <Button
+                android:layout_below="@+id/textBar"
+                android:layout_width="260dp"
+                android:layout_height="260dp"
+
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="430dp"
+
+                android:background="@android:color/holo_blue_dark"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:gravity="top"
+                android:stateListAnimator="@anim/press"
+                android:text="260x260 elv=4 z=5"
+                android:translationZ="5dp" />
+
+            <Button
+                android:layout_below="@+id/textBar"
+                android:layout_width="320dp"
+                android:layout_height="320dp"
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginTop="400dp"
+                android:background="@android:color/holo_green_dark"
+
+                android:clickable="true"
+                android:elevation="3dp"
+                android:gravity="top"
+                android:stateListAnimator="@anim/press"
+                android:text="320x320 elv=3 z=5"
+                android:translationZ="5dp" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="- Bottom -"
+        android:textColor="@android:color/black"
+        android:textSize="16dp" />
+
+
+</LinearLayout>

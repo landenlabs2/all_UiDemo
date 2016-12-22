@@ -1,0 +1,24 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="grid_layout_image_width">80dp</dimen>
+    <dimen name="grid_layout_image_height">80dp</dimen>
+
+    <dimen name="buttonHeight">50dp</dimen>
+    <dimen name="buttonTextSize">20sp</dimen>
+    <dimen name="textCompareSize">20sp</dimen>
+
+    <dimen name="thumb_size">28dp</dimen>      <!-- 28 40 20 -->
+    <dimen name="track_width">20dp</dimen>     <!-- 20 -->
+    <dimen name="track_height">12dp</dimen>    <!-- 12 40 36 -->
+    <dimen name="track_vmargin">10px</dimen>   <!-- 10 15 14 -->
+
+
+    <dimen name="location_screen_add_location_btn_height">54dp</dimen>
+    <dimen name="location_screen_spacer_height">40dp</dimen>
+    <dimen name="location_screen_hint_height">96dp</dimen>
+    <dimen name="location_screen_add_spacer_height">94dp</dimen>
+    <dimen name="location_screen_add_spacer_height_minus">-94dp</dimen>
+</resources>

@@ -1,0 +1,23 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <!--
+    <item name="android:background">#666</item>
+    <item name="android:background">@drawable/ripple_boarderless</item>
+    -->
+    <style name="RadioTab" parent="@android:style/Widget.Material.Light.CompoundButton.RadioButton">
+        <item name="android:background">@drawable/ripple_boarderless</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/tab_colors</item>
+    </style>
+
+</resources>

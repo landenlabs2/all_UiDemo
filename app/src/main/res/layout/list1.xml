@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#804040"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/topTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:background="#d0d0ff"
+        android:text="- Scrolling RadioBtns -" />
+
+    <!--  android:background="@drawable/paper_pink" -->
+    <ListView
+        android:id="@+id/list1view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/topTitle"
+        android:layout_above="@+id/bottomArea"
+        android:background="#e0a020"
+        android:layout_margin="5dp"
+        android:padding="15dp"
+        android:choiceMode="singleChoice"
+        android:scrollbars="vertical"
+        android:smoothScrollbar="true"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:dividerHeight="1dp"
+        android:divider="#402040"
+        android:listSelector="@drawable/list_selector"
+        tools:listitem="@layout/list1_row_checkbox" />
+        />
+
+
+    <ScrollView
+        android:id="@+id/bottomArea"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="10dp"
+        android:layout_height="100dp">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:background="#d0d0ff"  >
+
+            <RadioButton
+                android:id="@+id/row_ckBoxRb"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="CkBox"
+                android:checked="true"
+                />
+
+            <RadioButton
+                android:id="@+id/row_ckTxBoxRb"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="CkTxBox"
+                />
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="#c0c0c0" />
+
+            <RadioButton
+                android:id="@+id/row_simpleList1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Simple List1"
+                />
+            <RadioButton
+                android:id="@+id/row_simpleChk1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Simple Chk1"
+                />
+
+
+            <RadioButton
+                android:id="@+id/row_singleChoice1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Single Choice"
+                />
+            <RadioButton
+                android:id="@+id/row_multiChoice1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Multi Choice"
+                />
+
+
+            <RadioButton
+                android:id="@+id/row_activatedList1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Activated List"
+                />
+            <RadioButton
+                android:id="@+id/row_selectable"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Selectable"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@android:color/transparent" />
+        </RadioGroup>
+
+    </ScrollView>
+</RelativeLayout>

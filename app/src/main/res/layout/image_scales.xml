@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#d0d0ff"
+        android:padding="5dp"
+        android:text="- Image scale types -" />
+
+    <TextView
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:background="#d0d0ff"
+        android:padding="5dp"
+        android:text="-- Bottom --" />
+
+    <HorizontalScrollView
+        android:id="@+id/image_sizes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title">
+
+        <RadioGroup
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:background="#e0e0ff"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/image_size_50"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:stateListAnimator="@anim/press"
+                android:text="50x50" />
+
+            <RadioButton
+                android:id="@+id/image_size_220"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:stateListAnimator="@anim/press"
+                android:text="220x124 (16:9)" />
+
+            <RadioButton
+                android:id="@+id/image_size_vec"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:stateListAnimator="@anim/press"
+                android:text="Vector" />
+
+            <RadioButton
+                android:id="@+id/image_size_100w300h"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:stateListAnimator="@anim/press"
+                android:text="100x300" />
+
+            <RadioButton
+                android:id="@+id/image_size_300w100h"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:stateListAnimator="@anim/press"
+                android:text="300x100" />
+
+            <RadioButton
+                android:id="@+id/image_size_200"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:stateListAnimator="@anim/press"
+                android:text="200x200" />
+
+            <RadioButton
+                android:id="@+id/image_size_400"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:stateListAnimator="@anim/press"
+                android:text="400x400" />
+        </RadioGroup>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom"
+        android:layout_below="@id/image_sizes"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/image_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/squares10_tiles"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/rowtx"
+                android:gravity="center"
+                android:text="PercentLayout 16:9  (178%)"
+                android:textAppearance="@style/TextAppearanceWhite20" />
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp">
+
+                <com.landenlabs.all_UiDemo.Util.ExImageView
+                    android:contentDescription="Percent 178"
+                    android:background="@color/row1"
+                    android:src="@drawable/image200"
+                    app:layout_aspectRatio="178%"
+                    android:layout_height="90dp" />
+            </android.support.percent.PercentRelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/rowtx"
+                android:gravity="center"
+                android:text="PercentLayout 1:2 (50%)"
+                android:textAppearance="@style/TextAppearanceWhite20" />
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp">
+
+                <com.landenlabs.all_UiDemo.Util.ExImageView
+                    android:contentDescription="Percent 50"
+                    android:background="@color/row0"
+                    android:src="@drawable/image200"
+                    app:layout_aspectRatio="50%"
+                    android:layout_height="90dp" />
+            </android.support.percent.PercentRelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/rowtx"
+                android:gravity="center"
+                android:text="fitStart"
+                android:textAppearance="@style/TextAppearanceWhite20" />
+
+            <com.landenlabs.all_UiDemo.Util.ExImageView
+                android:contentDescription="fitStart"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/row1"
+                android:clickable="true"
+                android:scaleType="fitStart"
+                android:src="@drawable/image200"
+                android:stateListAnimator="@anim/press" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/rowtx"
+                android:gravity="center"
+                android:text="fitEnd"
+                android:textAppearance="@style/TextAppearanceWhite20" />
+
+            <com.landenlabs.all_UiDemo.Util.ExImageView
+                android:contentDescription="fitEnd"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/row0"
+                android:clickable="true"
+                android:scaleType="fitEnd"
+                android:src="@drawable/image200"
+                android:stateListAnimator="@anim/press" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/rowtx"
+                android:gravity="center"
+                android:text="fitCenter (default)"
+                android:textAppearance="@style/TextAppearanceWhite20" />
+
+            <com.landenlabs.all_UiDemo.Util.ExImageView
+                android:contentDescription="fitCenter"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/row1"
+                android:clickable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/image200"
+                android:stateListAnimator="@anim/press" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/rowtx"
+                android:gravity="center"
+                android:text="center"
+                android:textAppearance="@style/TextAppearanceWhite20" />
+
+            <com.landenlabs.all_UiDemo.Util.ExImageView
+                android:contentDescription="center"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/row0"
+                android:clickable="true"
+                android:scaleType="center"
+                android:src="@drawable/image200"
+                android:stateListAnimator="@anim/press" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/rowtx"
+                android:gravity="center"
+                android:text="centerInside"
+                android:textAppearance="@style/TextAppearanceWhite20" />
+
+            <com.landenlabs.all_UiDemo.Util.ExImageView
+                android:contentDescription="centerInside"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/row1"
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/image200"
+                android:stateListAnimator="@anim/press" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/rowtx"
+                android:gravity="center"
+                android:text="centerCrop"
+                android:textAppearance="@style/TextAppearanceWhite20" />
+
+            <com.landenlabs.all_UiDemo.Util.ExImageView
+                android:contentDescription="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/row0"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image200"
+                android:stateListAnimator="@anim/press" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/rowtx"
+                android:gravity="center"
+                android:text="centerCrop (code)"
+                android:textAppearance="@style/TextAppearanceWhite20" />
+
+            <View
+                android:id="@+id/view_centerFill"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/row0"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image200"
+                android:stateListAnimator="@anim/press" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/rowtx"
+                android:gravity="center"
+                android:text="fitXY"
+                android:textAppearance="@style/TextAppearanceWhite20" />
+
+            <com.landenlabs.all_UiDemo.Util.ExImageView
+                android:contentDescription="fitXy"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/row1"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/image200"
+                android:stateListAnimator="@anim/press" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/rowtx"
+                android:gravity="center"
+                android:text="Matrix (upperLeftFill)"
+                android:textAppearance="@style/TextAppearanceWhite20" />
+
+            <com.landenlabs.all_UiDemo.Util.ExImageView
+                android:contentDescription="maxtrix1"
+                android:id="@+id/image_upperLeftFill"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/row0"
+                android:clickable="true"
+                android:scaleType="matrix"
+                android:src="@drawable/image200"
+                android:stateListAnimator="@anim/press" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/rowtx"
+                android:gravity="center"
+                android:text="Matrix (lowerLeftFill)"
+                android:textAppearance="@style/TextAppearanceWhite20" />
+
+            <com.landenlabs.all_UiDemo.Util.ExImageView
+                android:contentDescription="matrix2"
+                android:id="@+id/image_lowerLeftFill"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/row1"
+                android:clickable="true"
+                android:scaleType="matrix"
+                android:src="@drawable/image200"
+                android:stateListAnimator="@anim/press" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/rowtx"
+                android:gravity="center"
+                android:text="AdjustViewBounds"
+                android:textAppearance="@style/TextAppearanceWhite20" />
+
+            <com.landenlabs.all_UiDemo.Util.ExImageView
+                android:contentDescription="adjustViewBounds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@color/row0"
+                android:clickable="true"
+                android:src="@drawable/image200"
+                android:stateListAnimator="@anim/press" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/rowtx"
+                android:gravity="center"
+                android:text="maxHeight=50, maxWidth=100, adj=false"
+                android:textAppearance="@style/TextAppearanceWhite20" />
+
+            <com.landenlabs.all_UiDemo.Util.ExImageView
+                android:contentDescription="adjustViewBounds false"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="false"
+                android:maxWidth="100dp"
+                android:maxHeight="50dp"
+                android:background="@color/row1"
+                android:clickable="true"
+                android:src="@drawable/image200"
+                android:stateListAnimator="@anim/press" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/rowtx"
+                android:gravity="center"
+                android:text="maxHeight=50, maxWidth=100, adj=true"
+                android:textAppearance="@style/TextAppearanceWhite20" />
+
+            <com.landenlabs.all_UiDemo.Util.ExImageView
+                android:contentDescription="adjustViewBounds true"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxWidth="100dp"
+                android:maxHeight="50dp"
+                android:background="@color/row0"
+                android:clickable="true"
+                android:src="@drawable/image200"
+                android:stateListAnimator="@anim/press" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/rowtx"
+                android:gravity="center"
+                android:text="none"
+                android:textAppearance="@style/TextAppearanceWhite20" />
+
+            <com.landenlabs.all_UiDemo.Util.ExImageView
+                android:contentDescription="none"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/row1"
+                android:clickable="true"
+                android:src="@drawable/image200"
+                android:stateListAnimator="@anim/press" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/rowtx"
+                android:gravity="center"
+                android:text="Image wrap_content"
+                android:textAppearance="@style/TextAppearanceWhite20" />
+
+            <com.landenlabs.all_UiDemo.Util.ExImageView
+                android:contentDescription="wrapImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/row0"
+                android:clickable="true"
+                android:src="@drawable/image200"
+                android:stateListAnimator="@anim/press" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

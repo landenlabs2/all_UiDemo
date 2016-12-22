@@ -1,0 +1,8 @@
+<fragment
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/renderscript_id"
+    android:name="com.landenlabs.all_UiDemo.frag.RenderScriptFrag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout="@layout/renderscript_frag" />

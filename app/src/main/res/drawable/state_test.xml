@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Persistent states -->
+    <item android:drawable="@drawable/image_c" android:state_checked="true" />
+    <item android:drawable="@drawable/image_s" android:state_selected="true" />
+
+    <!-- Transient states -->
+    <item android:drawable="@drawable/image_p" android:state_pressed="true" />
+    <item android:drawable="@drawable/image_f" android:state_focused="true" />
+    <item android:drawable="@drawable/image_a" android:state_activated="true" />
+
+    <!-- Last state because is generally always true -->
+    <item android:drawable="@drawable/image_e" android:state_enabled="true" />
+
+    <item android:drawable="@drawable/image_off" />
+
+</selector>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#d0d0ff"
+        android:padding="5dp"
+        android:text="Text - Layout Gravity" />
+
+    <TextView
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:background="#d0d0ff"
+        android:padding="5dp"
+        android:text="-- Bottom --" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom"
+        android:layout_below="@id/title"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/squares10_tiles"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/rowtx1"
+                android:text="layoutLeft gravityLeft"
+                android:textAppearance="@style/TextAppearanceWhite20" />
+
+            <TextView
+                android:background="@color/row1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/textItems"
+                android:textAppearance="@style/TextAppearanceWhite32"
+                android:gravity="left" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/rowtx0"
+                android:text="layoutCenter gravityCenter"
+                android:textAppearance="@style/TextAppearanceWhite20" />
+
+            <TextView
+                android:background="@color/row0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/textItems"
+                android:textAppearance="@style/TextAppearanceWhite32"
+                android:gravity="center" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/rowtx1"
+                android:text="layoutRight gravityRight"
+                android:textAppearance="@style/TextAppearanceWhite20" />
+
+            <TextView
+                android:background="@color/row1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="@string/textItems"
+                android:textAppearance="@style/TextAppearanceWhite32"
+                android:gravity="right" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/rowtx0"
+                android:text="gravity left"
+                android:textAppearance="@style/TextAppearanceWhite20" />
+
+            <TextView
+                android:background="@color/row0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textItems"
+                android:textAppearance="@style/TextAppearanceWhite32"
+                android:gravity="left" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/rowtx1"
+                android:text="gravity center"
+                android:textAppearance="@style/TextAppearanceWhite20" />
+
+            <TextView
+                android:background="@color/row1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textItems"
+                android:textAppearance="@style/TextAppearanceWhite32"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/rowtx0"
+                android:text="gravity right"
+                android:textAppearance="@style/TextAppearanceWhite20" />
+
+            <TextView
+                android:background="@color/row0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textItems"
+                android:textAppearance="@style/TextAppearanceWhite32"
+                android:gravity="right" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

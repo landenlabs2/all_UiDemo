@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/paper_pink"
+    android:padding="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/anim_bg_image1"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:scaleType="matrix"
+        android:src="@drawable/clouds11"
+        />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="10dp" />
+
+    <ImageView
+        android:id="@+id/anim_bg_image2"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:scaleType="matrix"
+        android:src="@drawable/grid"
+        />
+</LinearLayout>

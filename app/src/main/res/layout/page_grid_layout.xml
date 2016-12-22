@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecc"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="GridLayout\nPress - Some have \n Animated elevation (API 21)\n Ripple effect (API 21)"
+        android:textColor="@android:color/black"
+        android:textSize="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:outlineProvider="bounds"
+            android:background="#eee"
+            android:columnCount="3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_columnSpan="3"
+                android:layout_gravity="fill"
+                android:layout_marginTop="10dp"
+                android:layout_row="0"
+                android:background="#ccc"
+                android:gravity="center"
+                android:text="ImageView src=image"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="@dimen/grid_layout_image_width"
+                android:layout_height="@dimen/grid_layout_image_height"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:background="@drawable/ripple_boarderless"
+                android:clickable="true"
+                android:src="@drawable/image_e"
+                android:stateListAnimator="@anim/press" />
+
+
+            <ImageView
+                android:layout_width="@dimen/grid_layout_image_width"
+                android:layout_height="@dimen/grid_layout_image_height"
+                android:background="@drawable/ripple_boarderless"
+                android:clickable="true"
+                android:src="@drawable/image_c"
+                android:stateListAnimator="@anim/press" />
+
+
+            <!-- outlineProvider required if no background set -->
+            <ImageView
+                android:layout_width="@dimen/grid_layout_image_width"
+                android:layout_height="@dimen/grid_layout_image_height"
+                android:clickable="true"
+                android:outlineProvider="bounds"
+                android:src="@drawable/image_c"
+                android:stateListAnimator="@anim/press" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_columnSpan="3"
+                android:layout_gravity="fill"
+                android:layout_marginTop="10dp"
+                android:layout_row="2"
+                android:background="#ccc"
+                android:gravity="center"
+                android:text="ImageView background=image"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="@dimen/grid_layout_image_width"
+                android:layout_height="@dimen/grid_layout_image_height"
+                android:layout_column="0"
+                android:layout_row="3"
+                android:background="@drawable/image_e"
+                android:clickable="true"
+                android:src="@drawable/ripple_boarderless"
+                android:stateListAnimator="@anim/press" />
+
+            <ImageView
+                android:layout_width="@dimen/grid_layout_image_width"
+                android:layout_height="@dimen/grid_layout_image_height"
+                android:background="@drawable/image_f"
+                android:clickable="true"
+                android:src="@drawable/ripple_boarderless"
+                android:stateListAnimator="@anim/press" />
+
+            <ImageView
+                android:layout_width="@dimen/grid_layout_image_width"
+                android:layout_height="@dimen/grid_layout_image_height"
+                android:background="@drawable/image_f"
+                android:clickable="true"
+                android:outlineProvider="bounds"
+                android:stateListAnimator="@anim/press" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_columnSpan="3"
+                android:layout_gravity="fill"
+                android:layout_marginTop="10dp"
+                android:layout_row="4"
+                android:background="#ccc"
+                android:gravity="center"
+                android:text="ImageButtons"
+                android:textSize="16dp" />
+
+            <ImageButton
+                android:layout_width="@dimen/grid_layout_image_width"
+                android:layout_height="@dimen/grid_layout_image_height"
+                android:layout_column="0"
+                android:layout_row="5"
+                android:clickable="true"
+                android:src="@drawable/image_e"
+                android:stateListAnimator="@anim/press" />
+
+            <ImageButton
+                android:layout_width="@dimen/grid_layout_image_width"
+                android:layout_height="@dimen/grid_layout_image_height"
+                android:clickable="true"
+                android:src="@drawable/image_s"
+                android:stateListAnimator="@anim/press" />
+
+            <ImageButton
+                android:layout_width="@dimen/grid_layout_image_width"
+                android:layout_height="@dimen/grid_layout_image_height"
+                android:clickable="true"
+                android:src="@drawable/image_s"
+                android:stateListAnimator="@anim/press" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_columnSpan="3"
+                android:layout_gravity="fill"
+                android:layout_marginTop="10dp"
+                android:layout_row="6"
+                android:background="#ccc"
+                android:gravity="center"
+                android:text="Button"
+                android:textSize="16dp" />
+
+            <Button
+                android:layout_width="@dimen/grid_layout_image_width"
+                android:layout_height="@dimen/grid_layout_image_height"
+                android:layout_column="0"
+                android:layout_row="7"
+
+                android:text="Btn-A"
+                android:background="@drawable/ripple_boarderless"
+                android:clickable="true"
+                android:stateListAnimator="@anim/press" />
+
+            <Button
+                android:text="Btn-B"
+                android:layout_width="@dimen/grid_layout_image_width"
+                android:layout_height="@dimen/grid_layout_image_height"
+                android:background="#cfc"
+                android:clickable="true"
+                android:stateListAnimator="@anim/press" />
+
+            <Button
+                android:text="Btn-C"
+                android:layout_width="@dimen/grid_layout_image_width"
+                android:layout_height="@dimen/grid_layout_image_height"
+                android:outlineProvider="bounds"
+                android:background="@drawable/image_c"
+                android:clickable="true"
+                android:stateListAnimator="@anim/press" />
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill"
+            android:layout_marginTop="10dp"
+            android:layout_row="8"
+            android:background="#ccc"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="16dp" />
+
+            <TextView
+                android:gravity="center"
+                android:text="Txt-A"
+                android:layout_width="@dimen/grid_layout_image_width"
+                android:layout_height="@dimen/grid_layout_image_height"
+                android:layout_column="0"
+                android:layout_row="9"
+                android:background="@drawable/ripple_boarderless"
+
+                android:clickable="true"
+                android:stateListAnimator="@anim/press" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="@dimen/grid_layout_image_width"
+                android:layout_height="@dimen/grid_layout_image_height"
+                android:text="Txt-B"
+                android:background="#cfc"
+                android:clickable="true"
+                android:stateListAnimator="@anim/press" />
+
+            <TextView
+                android:gravity="center"
+                android:text="Txt-C"
+                android:layout_width="@dimen/grid_layout_image_width"
+                android:layout_height="@dimen/grid_layout_image_height"
+                android:background="@drawable/image_c"
+                android:clickable="true"
+                android:outlineProvider="bounds"
+                android:stateListAnimator="@anim/press" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_columnSpan="3"
+                android:layout_gravity="fill"
+                android:layout_marginTop="10dp"
+                android:layout_row="10"
+                android:background="#ccc"
+                android:gravity="center"
+                android:text="RadioBtn"
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:gravity="center"
+                android:text="Txt-A"
+                android:layout_width="@dimen/grid_layout_image_width"
+                android:layout_height="@dimen/grid_layout_image_height"
+                android:layout_column="0"
+                android:layout_row="11"
+                android:button="@null"
+                android:background="@drawable/ripple_boarderless"
+                android:clickable="true"
+                android:stateListAnimator="@anim/press"
+                 />
+
+            <RadioButton
+                android:gravity="center"
+                android:layout_width="@dimen/grid_layout_image_width"
+                android:layout_height="@dimen/grid_layout_image_height"
+                android:text="Txt-B"
+                android:button="@drawable/transparent_ripple"
+                android:background="#cfc"
+                android:clickable="true"
+                android:stateListAnimator="@anim/press" />
+
+            <RadioButton
+                android:gravity="center"
+                android:text="Txt-C"
+                android:layout_width="@dimen/grid_layout_image_width"
+                android:layout_height="@dimen/grid_layout_image_height"
+                android:background="@drawable/image_c"
+                android:button="@drawable/ripple_boarderless"
+                android:clickable="true"
+                android:stateListAnimator="@anim/press" />
+
+        </GridLayout>
+
+    </ScrollView>
+</LinearLayout>

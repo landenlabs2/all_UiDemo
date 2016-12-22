@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shadow1"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/menu_page_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/menu_page_grid_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:src="@android:drawable/ic_dialog_dialer"
+            />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Ui Demo\nAvailable Pages"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:elevation="10dp"
+            android:id="@+id/menu_page_list_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_sort_by_size"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:layout_below="@+id/menu_page_title">
+
+        <LinearLayout
+            android:id="@+id/menu_page_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/paper_lite"
+            android:orientation="vertical">
+        </LinearLayout>
+    </ScrollView>
+
+    <GridView
+
+        android:visibility="gone"
+        android:layout_below="@+id/menu_page_title"
+        android:id="@+id/menu_page_gridview"
+        android:background="@drawable/paper_lite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="150dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="auto_fit"
+        android:padding="10dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" />
+
+
+    <!-- Splash screen -->
+    <ImageView
+        android:id="@+id/overlay_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0"
+        android:scaleType="fitXY"
+        android:src="@drawable/paper_dark" />
+
+    <ImageView
+        android:id="@+id/overlay_logo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0"
+        android:src="@drawable/uidemo" />
+
+    <TextView
+        android:id="@+id/overlay_text"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0"
+        android:gravity="bottom|center_horizontal"
+        android:text="@string/app_desc"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+</RelativeLayout>

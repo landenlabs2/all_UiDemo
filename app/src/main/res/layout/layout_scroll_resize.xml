@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wsi="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#112"
+    android:theme="@style/Theme.AppCompat"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/loc_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/locations_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:textSize="18dp"
+            android:text="Risizable ScrollView" />
+
+        <Button
+            android:id="@+id/locations_done"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/checkmark" />
+
+        <TextView
+            android:id="@+id/scroll_idx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/transparent_ripple"
+            android:textSize="16dp"
+            android:text="0"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/resizing_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loc_title_bar"
+        android:layout_marginBottom="@dimen/location_screen_add_spacer_height"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/scroll_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f00" />
+
+            <TextView
+                tools:visibility="visible"
+                android:visibility="gone"
+                android:id="@+id/top_alert_hint"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/location_screen_hint_height"
+                android:layout_below="@+id/locations_selection_bottom_separator"
+                android:gravity="center"
+                tools:text="Comment at end of list\n(just a comment)"
+                android:lineSpacingExtra="10dp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/locations_selection_bottom_separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/resizing_scrollview"
+        android:layout_marginTop="@dimen/location_screen_add_spacer_height_minus"
+        android:background="#0f0" />
+
+    <!-- Height of following items you want to stay in view as the scroll grows
+       must store their total heights in location_screen_add_spacer_height and
+      negative value in location_screen_add_spacer_height_minus -->
+
+    <View
+        android:id="@+id/location_add_spacer"
+        android:layout_below="@+id/locations_selection_bottom_separator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/location_screen_spacer_height" />
+
+    <LinearLayout
+        android:id="@+id/scroll_btns"
+        android:layout_below="@+id/location_add_spacer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/location_screen_add_location_btn_height"
+        android:orientation="horizontal"
+        android:background="#20ffffff"
+        >
+
+        <TextView
+            android:background="#000"
+            android:layout_margin="4dp"
+            android:id="@+id/scroll_add"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Add"
+            android:textSize="20dp"
+            android:textColor="#0f0" />
+
+        <Button
+            android:background="#000"
+            android:layout_margin="4dp"
+            android:id="@+id/scroll_del"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Del"
+            android:textSize="20dp"
+            android:textColor="#f88" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_below="@+id/scroll_btns"
+        android:id="@+id/bottom_alert_hint"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/location_screen_hint_height"
+        android:lineSpacingExtra="10dp"
+        android:gravity="center"
+        tools:text="Press Add to update list\n(this is a comment)" />
+
+</LinearLayout>

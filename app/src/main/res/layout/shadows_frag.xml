@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#d0d0ff"
+        android:padding="5dp"
+        android:gravity="center"
+        android:text="-- View Shadows --" />
+
+    <HorizontalScrollView
+        android:layout_below="@id/title"
+        android:id="@+id/shadow_views"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/shadow_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:tag="1"
+            android:text="@string/shadow_text" />
+
+        <TextView
+            android:background="#fccc"
+            android:id="@+id/shadow_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:tag="2"
+            android:text="@string/shadow_text" />
+
+
+        <TextView
+            android:background="#f888"
+            android:id="@+id/shadow_text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:tag="3"
+            android:text="@string/shadow_text" />
+
+        <ImageView
+            android:id="@+id/shadow_image1"
+            android:tint="#ffff0000"
+            android:tintMode="multiply"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/scr_home_with_shadow"
+            android:tag="scr_home_with_shadow"
+            />
+
+        <ImageView
+            android:id="@+id/shadow_image2"
+            android:background="#ccc"
+            android:tint="#ffffff00"
+            android:tintMode="multiply"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/scr_hourly"
+            android:tag="scr_hourly"
+            />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:background="#d0d0ff"
+        android:padding="5dp"
+        android:gravity="center"
+        android:text="-- View Shadows --" />
+
+    <RelativeLayout
+        android:id="@+id/ShadowHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom"
+        android:layout_below="@id/shadow_views"
+        android:layout_gravity="center_horizontal">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/paintModeRG">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textsize_lbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextSize:"
+                    android:textSize="20sp"
+                    android:textColor="#000" />
+
+                <SeekBar
+                    android:id="@+id/textsize_sb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    style="@android:style/Widget.SeekBar"
+                    android:max="255" />
+
+
+                <TextView
+                    android:id="@+id/textcolor_lbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextColor:"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:shadowColor="#fff" />
+
+                <SeekBar
+                    android:id="@+id/textcolor_sb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    style="@android:style/Widget.SeekBar"
+                    android:max="255" />
+
+                <TextView
+                    android:id="@+id/textbgcolor_lbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ccc"
+                    android:text="TextBgColor:"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:shadowColor="#000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="2"
+                    android:singleLine="false" />
+
+                <SeekBar
+                    android:id="@+id/textbgcolor_sb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    style="@android:style/Widget.SeekBar"
+                    android:max="255" />
+
+
+                <TextView
+                    android:id="@+id/shadowcolor_lbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ShadowColor:"
+                    android:textColor="#800000"
+                    android:textSize="20sp" />
+
+                <SeekBar
+                    android:id="@+id/shadowcolor_sb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@android:style/Widget.SeekBar"
+                    android:max="255" />
+
+
+                <TextView
+                    android:id="@+id/shadowalpha_lbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ShadowAlpha:"
+                    android:textColor="#800000"
+                    android:textSize="20sp" />
+
+                <SeekBar
+                    android:id="@+id/shadowalpha_sb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@android:style/Widget.SeekBar"
+                    android:max="255" />
+
+                <TextView
+                    android:id="@+id/radius_lbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Radius"
+                    android:textColor="#008000"
+                    android:textSize="20sp" />
+
+                <SeekBar
+                    android:id="@+id/radius_sb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@android:style/Widget.SeekBar"
+                    android:max="255" />
+
+                <TextView
+                    android:id="@+id/offsetx_lbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="OffsetX"
+                    android:textColor="#808000"
+                    android:textSize="20sp" />
+
+                <SeekBar
+                    android:id="@+id/offsetx_sb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@android:style/Widget.SeekBar"
+                    android:max="255" />
+
+                <TextView
+                    android:id="@+id/offsety_lbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="OffsetY"
+                    android:textColor="#808000"
+                    android:textSize="20sp" />
+
+                <!--
+                    android:progressDrawable="@drawable/seekbar1"
+                    android:thumb="@drawable/seekbar_thumb"
+                    android:thumbTintMode="multiply"
+                    -->
+                <SeekBar
+                    android:id="@+id/offsety_sb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@android:style/Widget.SeekBar"
+                    android:max="255" />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

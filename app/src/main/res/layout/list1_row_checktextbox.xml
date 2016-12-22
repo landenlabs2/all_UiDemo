@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceListItemSmall"
+
+    android:background="@drawable/transparent_ripple"
+    android:gravity="center_vertical"
+
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+
+    tools:text="Hello World"
+    tools:checked="true"
+
+    android:checkMark="@null"
+    android:drawableLeft="@drawable/checkline"
+    />
+
+    <!--
+       android:checkMark="@drawable/checkline"
+    android:background="@drawable/round_border_sel"
+     android:minHeight="?android:attr/listPreferredItemHeightSmall"
+    -->

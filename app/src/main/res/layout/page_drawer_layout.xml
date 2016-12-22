@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/DrawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!--
+    android:fitsSystemWindows="true"
+    style="@style/FullDrawerStyle"
+    app:theme="@style/FullDrawerStyle"
+    android:theme="@style/FullDrawerStyle"
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="30dp"
+            android:text="a. DrawerLayout\nb. on Left Size\nc. \nd. Swipe from left and down\ne. to open menu\nf. \ng. Right for next page" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="#ffffa0a0"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:text="FullScreen\n----------\n"
+            />
+        <android.support.v7.widget.ListViewCompat
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:entries="@array/states8" />
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
