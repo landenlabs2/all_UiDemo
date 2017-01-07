@@ -16,7 +16,7 @@ Demonstrate various Ui Components (useful to see how they change on different AP
 <a name="menu"></a>
 **Ui Demo Menu** 
 
-![ScreenShot](https://raw.github.com/landenlabs2/all-UiDemo/master/screenshots/uidemo-menu.png)
+![ScreenShot](https://raw.github.com/landenlabs2/all_UiDemo/master/screenshots/uidemo-menu.png)
 [To Top](#table)
 ---
 <a name="switches"></a>
@@ -52,61 +52,62 @@ Press state list animation elevation change
 <a name="text-size"></a>
 **Text Size** 
 
-![ScreenShot](https://raw.github.com/landenlabs2/all-UiDemo/master/screenshots/uidemo-textsize.png)
+![ScreenShot](https://raw.github.com/landenlabs2/all_UiDemo/master/screenshots/uidemo-textsize.png)
 [To Top](#table)
 ---
 <a name="imagescale"></a>
 **Image ScaleType** 
 
-![ScreenShot](https://raw.github.com/landenlabs2/all-UiDemo/master/screenshots/uidemo-imagescale.png)
+![ScreenShot](https://raw.github.com/landenlabs2/all_UiDemo/master/screenshots/uidemo-imagescale.png)
 [To Top](#table)
 ---
 <a name="anim-bg"></a>
 **Animaged Background Image** 
 
-![ScreenShot](https://raw.github.com/landenlabs2/all-UiDemo/master/screenshots/uidemo-anim-bg.png)
+![ScreenShot](https://raw.github.com/landenlabs2/all_UiDemo/master/screenshots/uidemo-anim-bg.gif)
 [To Top](#table)
 
 ---
 <a name="blur"></a>
 **Blur Image** 
 
-![ScreenShot](https://raw.github.com/landenlabs2/all-UiDemo/master/screenshots/uidemo-blur1.png)
+![ScreenShot](https://raw.github.com/landenlabs2/all_UiDemo/master/screenshots/uidemo-blur1.png)
 [To Top](#table)
 ---
 <a name="elev-shadow"></a>
 **Elevation Shadows** 
 
-![ScreenShot](https://raw.github.com/landenlabs2/all-UiDemo/master/screenshots/uidemo-elev-shadow.png)
+![ScreenShot](https://raw.github.com/landenlabs2/all_UiDemo/master/screenshots/uidemo-elev-shadow.gif)
 [To Top](#table)
 ---
 <a name="text-shadow"></a>
 **Text Shadow** 
 
-![ScreenShot](https://raw.github.com/landenlabs2/all-UiDemo/master/screenshots/uidemo-text-shadow.png)
+![ScreenShot](https://raw.github.com/landenlabs2/all_UiDemo/master/screenshots/uidemo-text-shadow.png)
 [To Top](#table)
 ---
 <a name="line-graph"></a>
 **Line Graph** 
 
-![ScreenShot](https://raw.github.com/landenlabs2/all-UiDemo/master/screenshots/uidemo-graph.png)
+![ScreenShot](https://raw.github.com/landenlabs2/all_UiDemo/master/screenshots/uidemo-graph.gif)
 [To Top](#table)
 ---
 <a name="list-anim"></a>
 **Line Animation with scrolling bar** 
 
-![ScreenShot](https://raw.github.com/landenlabs2/all-UiDemo/master/screenshots/uidemo-list-anim.png)
+             
+![ScreenShot](https://raw.github.com/landenlabs2/all_UiDemo/master/screenshots/uidemo-list-anim.gif)
 [To Top](#table)
 
 ---
 <a name="opengl"></a>
 **OpenGL spinning cube** 
 
-![ScreenShot](https://raw.github.com/landenlabs2/all-UiDemo/master/screenshots/uidemo-opengl.png)
+![ScreenShot](https://raw.github.com/landenlabs2/all_UiDemo/master/screenshots/uidemo-opengl.gif)
 [To Top](#table)
 ---
 <a name="opengl"></a>
 **Relative Layout** 
 
-![ScreenShot](https://raw.github.com/landenlabs2/all-UiDemo/master/screenshots/uidemo-rellayout.png)
+![ScreenShot](https://raw.github.com/landenlabs2/all_UiDemo/master/screenshots/uidemo-rellayout.png)
 [To Top](#table)
