@@ -5,3 +5,5 @@
 .DS_Store
 /build
 /captures
+accounts.xml
+release.properties

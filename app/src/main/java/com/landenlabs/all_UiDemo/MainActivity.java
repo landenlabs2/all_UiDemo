@@ -44,6 +44,7 @@ import android.view.ViewGroup;
 import com.landenlabs.all_UiDemo.Util.AppCrash;
 import com.landenlabs.all_UiDemo.Util.GoogleAnalyticsHelper;
 import com.landenlabs.all_UiDemo.Util.PageItem;
+import com.landenlabs.all_UiDemo.Util.UncaughtExceptionHandler;
 
 
 /**
@@ -82,7 +83,7 @@ public class MainActivity extends ActionBarActivity    {
         super.onCreate(savedInstanceState);
 
         boolean DEBUG = isDebug(getApplicationInfo());
-        // m_uncaughtExceptionHandler = new UncaughtExceptionHandler(DEBUG);
+        new UncaughtExceptionHandler();
         AppCrash.initalize(getApplication(), DEBUG);
         mAnalytics = new GoogleAnalyticsHelper(getApplication(), DEBUG);
 

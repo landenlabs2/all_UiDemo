@@ -2,12 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     signingConfigs {
-        config {
-            keyAlias 'all-uidemo'
-            keyPassword 'Salem2nh-k'
-            storeFile file('/Users/ldennis/projects-android/keystores/all-uidemo.jks')
-            storePassword 'Salem2nh-u'
-        }
+        release
     }
     compileSdkVersion 24
     buildToolsVersion '24.0.3'
@@ -20,7 +15,7 @@ android {
 
         // renderscriptTargetApi 23
         // renderscriptSupportModeEnabled true
-        signingConfig signingConfigs.config
+        signingConfig signingConfigs.release
     }
     buildTypes {
         release {
@@ -29,45 +24,51 @@ android {
             applicationVariants.all { variant ->
                 appendVersionNameVersionCode(variant, defaultConfig)
             }
-            signingConfig signingConfigs.config
+            signingConfig signingConfigs.release
         }
         debug {
             renderscriptDebuggable true
         }
     }
+
+    lintOptions {
+        abortOnError false
+        disable 'DefaultLocale', 'SimpleDateFormat', 'InflateParams', 'SpUsage',
+                'UseCompoundDrawables', 'HandlerLeak', 'ViewConstructor', 'SetTextI18n',
+                'RtlSymmetry', 'RtlHardcoded', 'ContentDescription',
+                'MissingTranslation', 'ValidFragment', 'UnusedAttribute'
+    }
+
     productFlavors {
     }
-    lintOptions {
-        // abortOnError false
-        // checkReleaseBuilds false
-        disable 'MissingTranslation', 'ValidFragment', 'ContentDescription'
-    }
+
     packagingOptions {
         exclude 'META-INF/LICENSE.txt'
         exclude 'META-INF/NOTICE.txt'
     }
+
     sourceSets {
         main {
-            // manifest.srcFile 'AndroidManifest.xml'
-            // java.srcDirs = ['src']
-            // resources.srcDirs = ['src']
-            // aidl.srcDirs = ['src']
             renderscript.srcDirs = ['src']
             // res.srcDirs = ['res']
             // assets.srcDirs = ['assets']
         }
     }
-}
 
-ext {
-    supportLibVersion = '24.2.1'
+    // Load signing config.
+    def props = new Properties()
+    props.load(new FileInputStream(rootProject.file("release.properties")))
+    android.signingConfigs.release.storeFile rootProject.file(props.keyStore)
+    android.signingConfigs.release.storePassword props.keyStorePassword
+    android.signingConfigs.release.keyAlias props.keyAlias
+    android.signingConfigs.release.keyPassword props.keyAliasPassword
 }
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile "com.android.support:appcompat-v7:${supportLibVersion}"
-    compile "com.android.support:percent:${supportLibVersion}"
-    compile "com.android.support:design:${supportLibVersion}"
+    compile "com.android.support:appcompat-v7:24.2.1"
+    compile "com.android.support:percent:24.2.1"
+    compile "com.android.support:design:24.2.1"
     compile 'com.google.android.gms:play-services-analytics:9.6.1'
     compile 'net.hockeyapp.android:HockeySDK:4.1.1'
 }
