@@ -52,13 +52,13 @@ Press state list animation elevation change
 <a name="text-size"></a>
 **Text Size** 
 
-![ScreenShot](https://raw.github.com/landenlabs2/all_UiDemo/master/screenshots/uidemo-textsize.png)
+![ScreenShot](https://raw.github.com/landenlabs2/all_UiDemo/master/screenshots/uidemo-textsize.jpg)
 [To Top](#table)
 ---
 <a name="imagescale"></a>
 **Image ScaleType** 
 
-![ScreenShot](https://raw.github.com/landenlabs2/all_UiDemo/master/screenshots/uidemo-imagescale.png)
+![ScreenShot](https://raw.github.com/landenlabs2/all_UiDemo/master/screenshots/uidemo-imagescale.jpg)
 [To Top](#table)
 ---
 <a name="anim-bg"></a>
@@ -71,7 +71,7 @@ Press state list animation elevation change
 <a name="blur"></a>
 **Blur Image** 
 
-![ScreenShot](https://raw.github.com/landenlabs2/all_UiDemo/master/screenshots/uidemo-blur1.png)
+![ScreenShot](https://raw.github.com/landenlabs2/all_UiDemo/master/screenshots/uidemo-blur1.jpg)
 [To Top](#table)
 ---
 <a name="elev-shadow"></a>
@@ -83,7 +83,7 @@ Press state list animation elevation change
 <a name="text-shadow"></a>
 **Text Shadow** 
 
-![ScreenShot](https://raw.github.com/landenlabs2/all_UiDemo/master/screenshots/uidemo-text-shadow.png)
+![ScreenShot](https://raw.github.com/landenlabs2/all_UiDemo/master/screenshots/uidemo-text-shadow.jpg)
 [To Top](#table)
 ---
 <a name="line-graph"></a>
@@ -109,5 +109,5 @@ Press state list animation elevation change
 <a name="opengl"></a>
 **Relative Layout** 
 
-![ScreenShot](https://raw.github.com/landenlabs2/all_UiDemo/master/screenshots/uidemo-rellayout.png)
+![ScreenShot](https://raw.github.com/landenlabs2/all_UiDemo/master/screenshots/uidemo-rellayout.jpg)
 [To Top](#table)
