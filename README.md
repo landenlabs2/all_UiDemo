@@ -7,6 +7,18 @@ Demonstrate various Ui Components (useful to see how they change on different AP
 2. [Checkboxes right side] (#checkboxes-right)
 3. [Lists] (#lists)
 4. [List animation] (#list-animation)
+5. [Text] (#text)
+6. [Text Size] (#text-size)
+7. [Image Scale] (#imagescale)
+8. [Animated Background] (#anim-bg)
+9. [Blur Image] (#blur)
+10. [Elevation Shadow] (#elev-shadow)
+11. [Text Shadow] (#text-shadow)
+12. [Line Graph] (#line-graph)
+13. [List Animation with Scrolling bar] (#list-anim)
+14. [OpenGL Cube rotating] (#opengl)
+15.[Relative Layout] (#rellayout)
+
 
 ***
 
@@ -46,7 +58,7 @@ Press state list animation elevation change
 <a name="text"></a>
 **Text**
 
-![ScreenShot](https://raw.github.com/landenlabs/UiComponents/master/screenshots/page1-text.png)
+![ScreenShot](https://raw.github.com/landenlabs2/all_UiDemo/master/screenshots/page1-text.png)
 [To Top](#table)
 ---
 <a name="text-size"></a>
@@ -93,7 +105,7 @@ Press state list animation elevation change
 [To Top](#table)
 ---
 <a name="list-anim"></a>
-**Line Animation with scrolling bar** 
+**List Animation with scrolling bar** 
 
              
 ![ScreenShot](https://raw.github.com/landenlabs2/all_UiDemo/master/screenshots/uidemo-list-anim.gif)
@@ -106,7 +118,7 @@ Press state list animation elevation change
 ![ScreenShot](https://raw.github.com/landenlabs2/all_UiDemo/master/screenshots/uidemo-opengl.gif)
 [To Top](#table)
 ---
-<a name="opengl"></a>
+<a name="rellayout"></a>
 **Relative Layout** 
 
 ![ScreenShot](https://raw.github.com/landenlabs2/all_UiDemo/master/screenshots/uidemo-rellayout.jpg)
