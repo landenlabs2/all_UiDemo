@@ -217,6 +217,7 @@ public class MainActivity extends ActionBarActivity    {
             new PageItem( "GridLayout", R.layout.page_grid_layout),
             new PageItem( "Image Scales", R.layout.page_image_scales),
             new PageItem( "Image Overlap",  R.layout.page_image_over ),
+            new PageItem( "Image Blend",  R.layout.page_image_blend ),
 
             new PageItem( "RadioBtn Tabs", R.layout.page_radio_btns),
             new PageItem( "RadioBtn List", R.layout.page_radio_list),

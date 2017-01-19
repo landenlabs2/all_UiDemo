@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#d0d0ff"
+        android:padding="5dp"
+        android:text="- Image scale types -" />
+
+    <TextView
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:background="#d0d0ff"
+        android:padding="5dp"
+        android:text="-- Bottom --" />
+
+    <HorizontalScrollView
+        android:id="@+id/image_sizes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title">
+
+        <RadioGroup
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:background="#e0e0ff"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/blend_red"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:stateListAnimator="@anim/press"
+                android:text="Red" />
+
+            <RadioButton
+                android:id="@+id/blend_green"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:stateListAnimator="@anim/press"
+                android:text="Grn" />
+
+            <RadioButton
+                android:id="@+id/blend_blue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:stateListAnimator="@anim/press"
+                android:text="Blu" />
+
+            <RadioButton
+                android:id="@+id/blend_img1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:stateListAnimator="@anim/press"
+                android:text="Img1" />
+
+            <RadioButton
+                android:id="@+id/blend_img2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:stateListAnimator="@anim/press"
+                android:text="Img2" />
+
+            <RadioButton
+                android:id="@+id/blend_img3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:stateListAnimator="@anim/press"
+                android:text="Img3" />
+
+            <RadioButton
+                android:id="@+id/blend_img4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:stateListAnimator="@anim/press"
+                android:text="Img4" />
+        </RadioGroup>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom"
+        android:layout_below="@id/image_sizes"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/image_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/squares10_tiles"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/rowtx"
+                android:gravity="center"
+                android:text="Image wrap_content"
+                android:textAppearance="@style/TextAppearanceWhite20" />
+
+            <ImageView
+                android:contentDescription="wrapImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/row0"
+                android:clickable="true"
+                android:src="@drawable/image200"
+                android:stateListAnimator="@anim/press" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
