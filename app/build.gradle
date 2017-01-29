@@ -1,5 +1,7 @@
 apply plugin: 'com.android.application'
 
+String outputDirFramework = file('../dist').getPath();
+
 android {
     signingConfigs {
         release
@@ -21,9 +23,11 @@ android {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            /*
             applicationVariants.all { variant ->
                 appendVersionNameVersionCode(variant, defaultConfig)
             }
+            */
             signingConfig signingConfigs.release
         }
         debug {
@@ -55,6 +59,26 @@ android {
         }
     }
 
+    preBuild << {
+        println gradle.gradleHomeDir
+        File distFolder = new File(outputDirFramework);
+        if (!distFolder.exists()) {
+            println distFolder.mkdirs();
+        }
+    }
+
+    // This code is for copying aar files to dist folder.
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                def fileName = outputFile.name.replace(".apk", "-v" + defaultConfig.versionCode + ".apk")
+                fileName = fileName.replace("app-", "all-UiDemo-");
+                output.outputFile = new File(outputDirFramework, fileName)
+            }
+        }
+    }
+    
     // Load signing config.
     def props = new Properties()
     props.load(new FileInputStream(rootProject.file("release.properties")))
@@ -73,6 +97,7 @@ dependencies {
     compile 'net.hockeyapp.android:HockeySDK:4.1.1'
 }
 
+/*
 def appendVersionNameVersionCode(variant, defaultConfig) {
     variant.outputs.each { output ->
         if (output.zipAlign) {
@@ -85,6 +110,9 @@ def appendVersionNameVersionCode(variant, defaultConfig) {
 
         def file = output.packageApplication.outputFile
         def fileName = file.name.replace(".apk", "-v" + defaultConfig.versionCode + ".apk")
+        def ourname =   project.parent.name;
+        fileName = fileName.replace("app-", "$ourname-");
         output.packageApplication.outputFile = new File(file.parent, fileName)
     }
 }
+*/
